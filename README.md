@@ -13,6 +13,8 @@ This project demonstrates the design and implementation of a cloud-native securi
 - **Incident Alert**: Medium-severity alert generated upon detection
 
 <img width="800" height="536" alt="image" src="https://github.com/user-attachments/assets/48c10f18-42e3-4e7e-b083-c6e21cc9da02" />
+
+
 **Figure 1: Architecture of the Brute Force Detection Lab**  
 Visual flow from attack simulation to incident alert in Sentinel.
 
