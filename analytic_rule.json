@@ -1,4 +1,5 @@
-//This is an ARM (Azure Resource Manager) template that defines your custom analytic rule as code. //This allows you to deploy your detection logic programmatically.
+This is an ARM (Azure Resource Manager) template that defines your custom analytic rule as code. 
+This allows you to deploy your detection logic programmatically.
 
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
@@ -15,7 +16,7 @@
     {
       "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
       "apiVersion": "2021-10-01-preview",
-      "name": "[concat(parameters('workspaceName'), '/Microsoft.SecurityInsights/01a1a1a1-2b2b-3c3c-4d4d-05e5e5e5e5e5')]", // Replace with a unique GUID
+      "name": "[concat(parameters('workspaceName'), '/Microsoft.SecurityInsights/01a1a1a1-2b2b-3c3c-4d4d-05e5e5e5e5e5')]",  Replace with a unique GUID
       "kind": "Scheduled",
       "properties": {
         "displayName": "RDP Brute Force Detection",
