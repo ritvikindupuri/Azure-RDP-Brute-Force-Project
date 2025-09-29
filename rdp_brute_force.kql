@@ -1,0 +1,6 @@
+// KQL Query to detect RDP Brute Force attacks
+// Looks for more than 5 failed logons (Event ID 4625) from a single IP in 10 minutes.
+SecurityEvent
+| where EventID == 4625
+| summarize count() by IpAddress, bin(TimeGenerated, 10m)
+| where count_ > 5
